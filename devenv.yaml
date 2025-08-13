@@ -1,0 +1,19 @@
+clean:
+  enabled: true
+  keep:
+    # - name # keep to allow value of env.name if set in devenv.nix
+    - EDITOR # allow user to keep their expected/preferred editor
+    - TERM # terminal history doesn't clear upon vim exit with default 'dumb'
+inputs:
+  nixpkgs:
+    url: github:cachix/devenv-nixpkgs/rolling
+  nixpkgs-python:
+    url: github:cachix/nixpkgs-python
+    inputs:
+      nixpkgs:
+        follows: nixpkgs
+  nvf:
+    url: github:notashelf/nvf
+
+
+  
