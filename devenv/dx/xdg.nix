@@ -13,7 +13,7 @@
   };
 
   config = lib.mkIf config.xdg.enable {
-    enterShell = ''
+    enterShell = lib.mkBefore ''
       export HOME=$(realpath "${config.xdg.home}")
       [ ! -d $HOME ] && mkdir -p $HOME
 

@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   imports = [
-    ./xdg.nix # import this first so that expected XDG dirs are present
+    ./xdg.nix
     ./prompt.nix
     ./neovim
     ./clipboard.nix
