@@ -13,6 +13,11 @@
 
       nix.enable = true;
       ts.enable = true;
+      html = {
+        enable = true;
+        treesitter.autotagHtml = true;
+      };
+      css.enable = true;
       tailwind.enable = true;
       python.enable = true;
       sql.enable = true;
