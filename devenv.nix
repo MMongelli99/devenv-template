@@ -11,6 +11,7 @@
 
   # https://devenv.sh/basics/
   # env.GREET = "devenv";
+  # env.name = "custom";
 
   # https://devenv.sh/packages/
   packages = with pkgs; [
@@ -22,14 +23,14 @@
 
   # https://devenv.sh/languages/
   # languages.rust.enable = true;
-  languages.python = {
-    enable = true;
-    version = "3.13";
-    venv = {
-      enable = true;
-      # requirements = ./backend/requirements.txt;
-    };
-  };
+  # languages.python = {
+  #   enable = true;
+  #   version = "3.13";
+  #   venv = {
+  #     enable = true;
+  #     # requirements = ./backend/requirements.txt;
+  #   };
+  # };
 
   # https://devenv.sh/processes/
   # processes.cargo-watch.exec = "cargo-watch";
